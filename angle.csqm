@@ -1,0 +1,23 @@
+/**
+ * @file angle.csqm
+ * @author Aniket Kumar (geek.aniket.coder@gmail.com)
+ * @brief This module contains the utilities for calculation of angles.
+ * @version 0.1
+ * @date 2022-10-22
+ * @copyright Copyright (c) 2022
+ * 
+ */
+#if !defined(ANGLE_CSQM)
+#define ANGLE_CSQM
+
+//including basic.csqm
+#include "basic.csqm"
+//This function will find the supplementry angle for given known angle.
+def supplementry(double angle1){
+    return 180-angle1;
+}
+//This function will find the complementry angle for given known angle.
+def complementry(double angle1){
+    return 90-angle1;
+}
+#endif // ANGLE_CSQM

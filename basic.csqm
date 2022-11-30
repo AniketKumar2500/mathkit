@@ -1,0 +1,38 @@
+#if !defined(BASIC_CSQM)
+#define BASIC_CSQM
+    #include "/media/aniket/disk/Csq/Modules/fmt/builtins.csqm"
+    #include<math.h>
+    /************************Constants****************************/
+    //pi constant
+    const double pi = 3.141592;
+
+    //************************************************************/
+    //power function to calculate power.
+    def power(long double base, long double pow_){
+        long double val = pow(base,pow_);
+        return val;
+    }
+    //This function calculates percentage.
+    double percent(double part, double whole){return (part/whole)*100;}
+    //This function checks that the given two rations are in  proposition or not.
+    def inproposition(int n1,int n2,int n3, int n4){
+        bool s = false;
+        if((n1*n4)==(n2*n3)){
+            s = true;
+        }
+        return s;
+    }
+    
+    // Function to find the square root of n but note it will only return perfect square.
+    def absroot(double n,double power_=2){
+        int num_root = 1;
+        for(int i=1;i<n;i++){
+            if(power(i,power_) == n){
+                num_root = i;
+                break;
+            }
+        }
+        return num_root;
+    }
+    def sqroot(long double n){return power(n,0.5);}
+#endif // BASIC_CSQM
