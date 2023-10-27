@@ -1,0 +1,9 @@
+cimport Math/cmathCore
+
+
+def mean(x):
+ s := 0
+ len := len(x)
+ for i in 0->len:
+  s = s+x[i]
+ return s/len
